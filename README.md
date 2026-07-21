@@ -138,6 +138,51 @@ Run the application:
 python src/main.py
 ```
 
+## Unit Testing
+
+The project includes unit tests for the portfolio performance metrics implemented in `metrics.py`. The tests are written using **pytest** and verify the correctness of each financial calculation.
+
+### Tested Functions
+
+- Annualized Volatility
+- Total Return
+- Annualized Return (CAGR)
+- Sharpe Ratio
+- Maximum Drawdown
+- Portfolio Beta
+
+### Running the Tests
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run all unit tests from the project root:
+
+```bash
+python -m pytest
+```
+
+Expected output:
+
+```text
+============================= test session starts =============================
+collected 7 items
+
+tests/test_metrics.py .......
+
+============================== 7 passed ==============================
+```
+
+The tests are located in:
+
+```text
+tests/
+└── test_metrics.py
+```
+
 ## Future Improvements
 
 - Mean-Variance Portfolio Optimization
