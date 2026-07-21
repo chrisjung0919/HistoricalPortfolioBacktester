@@ -1,4 +1,14 @@
+# Ignore the Python virtual environment
 venv/
+
+# Ignore Python bytecode cache directories
 __pycache__/
+
+# Ignore pytest cache files
+.pytest_cache/
+
+# Ignore compiled Python bytecode files
 *.pyc
+
+# Ignore macOS Finder metadata files
 .DS_Store
